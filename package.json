@@ -2,7 +2,7 @@
   "name": "express-demo",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "ngo-duc",
+  "author": "pham-cuong",
   "license": "MIT",
   "type": "module",
   "scripts": {
