@@ -1,0 +1,279 @@
+{
+	"info": {
+		"_postman_id": "7fce82ae-efb3-4272-ad62-60fd2a33f09f",
+		"name": "food_shop_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29369073"
+	},
+	"item": [
+		{
+			"name": "getAllUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5nb2R1YzI2N0BnbWFpbC5jb20iLCJyb2xlIjoiVVNFUiIsImlhdCI6MTY5MjQ1NTIwNiwiZXhwIjoxNjkyNDU1NTA2fQ.jklQaUmMfy-TT2mOTK7eCbY1PPYzs9w-RJnmOj09tvI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/user/getUser"
+			},
+			"response": []
+		},
+		{
+			"name": "getUserDetail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "file",
+					"file": {}
+				},
+				"url": "localhost:8080/api/user/getUserDetail/13"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8080/api/user/deleteUser/12"
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/user/createUser"
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/user/updateUser/13"
+			},
+			"response": []
+		},
+		{
+			"name": "getUserByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/api/user/getUserByName/duc"
+			},
+			"response": []
+		},
+		{
+			"name": "uploadFoodimg",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": "localhost:8080/api/food/uploadFood/5"
+			},
+			"response": []
+		},
+		{
+			"name": "resLike",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "{{domain}}/res/resLike/3/6"
+			},
+			"response": []
+		},
+		{
+			"name": "resUnlike",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{domain}}/res/resUnlike/3/6"
+			},
+			"response": []
+		},
+		{
+			"name": "getLikeByRes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{domain}}/res/getLikeByRes/4"
+			},
+			"response": []
+		},
+		{
+			"name": "getLikeByUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{domain}}/res/getLikeByUser/5"
+			},
+			"response": []
+		},
+		{
+			"name": "resRate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\" : \"6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{domain}}/res/resRate/4/3"
+			},
+			"response": []
+		},
+		{
+			"name": "getRateByRes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{domain}}/res/getRateByRes/2"
+			},
+			"response": []
+		},
+		{
+			"name": "getRateByUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{domain}}/res/getRateByUser/5"
+			},
+			"response": []
+		},
+		{
+			"name": "getListFoodByPage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{domain}}/food/getListFoodByPage/8/1"
+			},
+			"response": []
+		},
+		{
+			"name": "facebookLogin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{domain}}/user/facebookLogin/47346567843"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{domain}}/user/login"
+			},
+			"response": []
+		},
+		{
+			"name": "orderPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\" : 4,\r\n    \"code\" : \"UTHDJ\",\r\n    \"arr_sub_id\" : \"9,3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{domain}}/order/orderPost/4/2"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "domain",
+			"value": "localhost:8080/api",
+			"type": "string"
+		}
+	]
+}
